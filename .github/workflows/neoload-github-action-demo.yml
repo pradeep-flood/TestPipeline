@@ -31,7 +31,7 @@ jobs:
         run: >
           neoload login --url ${{ github.event.inputs.api_url }} ${{ github.event.inputs.token }} \
                   test-settings --zone ${{ github.event.inputs.zone_id }} --scenario 'simpledemo' createorpatch "My Github Test With CLI" \
-                  project --path https://raw.githubusercontent.com/pradeep-flood/TestPipeline/main/.github/simpledemo.yml upload
+                  project --path simpledemo.yml upload
       - name: "NeoLoad run test"
         run: >
           neoload run 
