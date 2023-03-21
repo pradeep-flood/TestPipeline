@@ -9,7 +9,7 @@ on:
       token:
         required: true
         description: 'NeoLoad Web Token'
-        default: 'specify_token_or_get_it_from_credentials'
+        default: '799bcb86470b3046f9d574b98692a35124fc7f80fb4469bd'
       zone_id:
         required: true
         description: 'Zone identifier'
@@ -26,7 +26,7 @@ jobs:
       - name: "Get NeoLoad project"
         run: >
           rm -f *.yml;
-          wget https://raw.githubusercontent.com/Neotys-Labs/neoload-cli/master/tests/neoload_projects/simpledemo.yml
+          wget https://raw.githubusercontent.com/pradeep-flood/TestPipeline/main/.github/workflows/simpledemo.yml
       - name: "Prepare NeoLoad test"
         run: >
           neoload login --url ${{ github.event.inputs.api_url }} ${{ github.event.inputs.token }} \
