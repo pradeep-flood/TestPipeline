@@ -9,7 +9,7 @@ on:
       token:
         required: true
         description: 'NeoLoad Web Token'
-        default: 'UseryourTokenhere'
+        default: '9dbb7301ee0c1f459e552f169e79304d4b7d6269c6d552be'
       zone_id:
         required: true
         description: 'Zone identifier'
